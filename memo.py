@@ -140,6 +140,7 @@ def memo_list():
         memos = cursor.fetchall()
 
         responses = [{
+            'memo_id': iter[0],
             'created': str(iter[1]),
             'updated': str(iter[2]),
             'title': iter[4],
